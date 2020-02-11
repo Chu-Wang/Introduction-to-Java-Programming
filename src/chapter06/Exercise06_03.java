@@ -9,7 +9,7 @@ import java.util.Scanner;
 public class Exercise06_03 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        System.out.print("Enter a postive integer: ");
+        System.out.print("Enter a positive integer: ");
         int number = input.nextInt();
 
         if (isPalindrome(number))
@@ -24,10 +24,10 @@ public class Exercise06_03 {
 
     public static int reverse(int number) {
         int result = 0;
-        while (number != 0) {
-            int remainder = number % 10;
-            result = result * 10 + remainder;
-            number = number / 10;
+        while(number != 0){
+            int digit = number % 10;
+            result = result * 10 + digit;
+            number /= 10;
         }
         return result;
     }

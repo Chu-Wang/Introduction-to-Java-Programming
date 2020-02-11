@@ -1,23 +1,18 @@
 package chapter06;
 
+import java.util.Scanner;
+
 /**
  * @author WangMingMing
  * @creat 2019-12-14 20:18
  */
 public class Exercise06_07 {
     public static void main(String[] args) {
-        java.util.Scanner input = new java.util.Scanner(System.in);
-
-        // Enter loan amount
-        System.out.print(
-                "Enter investment amount, for example 100: ");
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter investment amount, for example 100: ");
         double investmentAmount =  input.nextDouble();
-
-        // Enter yearly interest rate
-        System.out.print(
-                "Enter yearly interest rate, for example 5.25: ");
+        System.out.print("Enter yearly interest rate, for example 5.25: ");
         double annualInterestRate = input.nextDouble();
-
         System.out.printf("%-5s%20s\n", "Years", "Future Value");
 
         for (int i = 1; i <= 30; i++) {

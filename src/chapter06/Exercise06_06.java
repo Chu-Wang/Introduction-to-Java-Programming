@@ -11,17 +11,16 @@ public class Exercise06_06 {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter line number: ");
         int number = scanner.nextInt();
-
         displayPattern(number);
 
     }
     public static void displayPattern(int n){
-        for(int row = 1; row <= n; row++){
-            for(int i = row; i < n; i++){
-                System.out.print("  ");
+        for(int i = 1; i <= n; i++){
+            for(int cap = 1; cap <= n - i; cap++){
+                System.out.print("    ");
             }
-            for(int i = row; i >= 1; i--){
-                System.out.print(" " + i);
+            for(int num = i; num >= 1; num--){
+                System.out.printf("%-4d", num);
             }
             System.out.println();
         }

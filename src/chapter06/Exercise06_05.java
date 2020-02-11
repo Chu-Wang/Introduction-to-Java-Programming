@@ -9,15 +9,12 @@ import java.util.Scanner;
  */
 public class Exercise06_05 {
     public static void main(String[] args) {
-        java.util.Scanner input = new java.util.Scanner(System.in);
-
+        Scanner input = new Scanner(System.in);
         System.out.print("Enter three values: ");
         double num1 = input.nextDouble();
         double num2 = input.nextDouble();
         double num3 = input.nextDouble();
 
-        // Invoke the displaySortedNumbers method to display the
-        // numbers in increasing order
         displaySortedNumbers(num1, num2, num3);
     }
 

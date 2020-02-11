@@ -8,7 +8,6 @@ public class Exercise06_08 {
     public static void main(String[] args) {
         System.out.println("Celsius\t\tFahrenheit\t|\tFahrenheit\tCelsius");
         System.out.println("---------------------------------------------");
-
         double celsius = 40;
         double farenheit = 120;
         for (int i = 1; i <= 10; celsius--, farenheit -= 10, i++) {
